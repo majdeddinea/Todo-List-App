@@ -32,8 +32,8 @@ These instructions will get you a copy of the project up and running on your loc
 First, clone the repository to your local machine using:
 
 ```sh
-git clone https://git@github.com:majdeddinea/Todo-List-App.git
-cd your-repo-name
+git clone git@github.com:majdeddinea/Todo-List-App.git
+cd Todo-List-App
 ```
 
 ### Install server dependencies:
@@ -113,8 +113,6 @@ mongoose
 
 This setup allows for seamless switching between local development and production environments without needing to change the application code.
 
-This revised README section provides clear instructions on configuring the application for both local and Atlas MongoDB connections, emphasizing security practices such as excluding the `.env` file from version control.
-
 ## Running the Application
 
 To get the application up and running, follow these steps:
@@ -157,9 +155,7 @@ cd server
 npm test
 ```
 
-This command will execute all tests defined in the `tests` directory, including creating, fetching, updating, and deleting tasks through the API.
-
----
+This command will execute all tests defined in the `tests` directory, including creating, fetching, updating, deleting, and reordring tasks through the API.
 
 ### API Endpoints
 
@@ -169,3 +165,8 @@ The following API endpoints are available:
 - `POST /api/tasks` - Create a new task
 - `PUT /api/tasks/:id` - Update an existing task
 - `DELETE /api/tasks/:id` - Delete an existing task
+- `POST /api/tasks/reorder` - Reorder all tasks
+
+## Project Link
+
+Explore the project here: [https://todo-list-app-git-main-majdeddinea1.vercel.app/](https://todo-list-app-git-main-majdeddinea1.vercel.app/)
