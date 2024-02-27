@@ -47,7 +47,7 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
-router.post("/bulk-update", async (req, res) => {
+router.post("/reorder", async (req, res) => {
   const updates = req.body;
   const operations = updates.map((update) => ({
     updateOne: {
